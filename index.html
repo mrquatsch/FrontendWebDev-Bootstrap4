@@ -38,12 +38,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-sm-6 order-first">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col col-sm-3 align-self-center order-last">
+                    <a class="btn btn-sm btn-warning btn-block" href="#table_reservation_form" role="button">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -76,11 +79,11 @@
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center order-last" src="img/buffet.png" alt="Buffet">
                     <div class="media-body order-first">
                         <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center order-last ml-2" src="img/buffet.png" alt="Buffet">
                 </div>
             </div>
         </div>
@@ -110,7 +113,7 @@
                 <div class="card">
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                     <div class="card-body">
-                        <form>
+                        <form id="table_reservation_form">
                             <div class="form-group row">
                                 <label class="col-12 col-sm-2">Number of Guests</label>
                                 <div class="col">
